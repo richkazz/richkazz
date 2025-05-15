@@ -6,6 +6,10 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
+# Add this permissions section
+permissions:
+  contents: write
+
 jobs:
   update-readme-with-medium:
     name: Update README with latest Medium posts
@@ -98,6 +102,12 @@ jobs:
       - name: Commit and push if changed
         run: |
           git config --local user.email "edawarekaro@gmail.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.name "Oghenekaro Richard Edaware"
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with latest Medium posts" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with latest Medium posts")
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.PAT }}
+          branch: ${{ github.ref }}
