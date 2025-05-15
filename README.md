@@ -145,7 +145,11 @@ Technologies: .NET Core Web API, MVC, Paystack, Opay
 
 ## 📝 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
-<!-- Will be populated with your Medium articles via GitHub Actions -->
+- [Secure Authentication in Flutter: Implementing Refresh Tokens with Dio](https://medium.com/@edawarekaro/secure-authentication-in-flutter-implementing-refresh-tokens-with-dio-e3ebef1f56ef?source=rss-f7d2dcf65495------2) - Mar 23, 2025
+- [Containerizing and Hosting a .NET Core Application on Render: An Updated Approach](https://medium.com/@edawarekaro/containerizing-and-hosting-a-net-core-application-on-render-an-updated-approach-40fae012787b?source=rss-f7d2dcf65495------2) - Feb 9, 2025
+- [Unlocking AI’s Code Comprehension: Representing Your Codebase as Data](https://medium.com/@edawarekaro/unlocking-ais-code-comprehension-representing-your-codebase-as-data-89b2887f76ff?source=rss-f7d2dcf65495------2) - Dec 27, 2024
+- [How to Seamlessly Connect Your Backend API on Project IDX to Your Frontend Using Ngrok](https://medium.com/@edawarekaro/how-to-seamlessly-connect-your-backend-api-on-project-idx-to-your-frontend-using-ngrok-2206246c8794?source=rss-f7d2dcf65495------2) - Oct 8, 2024
+- [Report on the Impact of Solar Power on Users’ Mentality and Behavior in Nigeria](https://medium.com/@edawarekaro/report-on-the-impact-of-solar-power-on-users-mentality-and-behavior-in-nigeria-c17b8fceae47?source=rss-f7d2dcf65495------2) - Aug 30, 2024
 <!-- BLOG-POST-LIST:END -->
 
 ## 📜 Certifications
