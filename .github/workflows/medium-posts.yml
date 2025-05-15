@@ -1,0 +1,103 @@
+name: Fetch Medium Posts
+
+on:
+  schedule:
+    # Runs once a day at midnight
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  update-readme-with-medium:
+    name: Update README with latest Medium posts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Fetch Medium RSS feed and update README
+        run: |
+          # Install necessary packages
+          npm install rss-parser
+
+          # Create script to fetch Medium posts
+          cat > fetch-medium-posts.js << 'EOF'
+          const Parser = require('rss-parser');
+          const fs = require('fs');
+          
+          const parser = new Parser();
+          const username = 'edawarekaro'; // Your Medium username
+          const MAX_POSTS = 5; // Number of posts to display
+          
+          async function fetchMediumPosts() {
+            try {
+              const feed = await parser.parseURL(`https://medium.com/feed/@${username}`);
+              
+              let markdownContent = '<!-- BLOG-POST-LIST:START -->\n';
+              
+              const posts = feed.items.slice(0, MAX_POSTS);
+              if (posts.length === 0) {
+                markdownContent += '- No posts found. Check out my Medium profile at https://medium.com/@edawarekaro\n';
+              } else {
+                posts.forEach(item => {
+                  // Extract date and format it
+                  const pubDate = new Date(item.pubDate);
+                  const formattedDate = pubDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                  });
+                  
+                  // Add post to markdown
+                  markdownContent += `- [${item.title}](${item.link}) - ${formattedDate}\n`;
+                });
+              }
+              
+              markdownContent += '<!-- BLOG-POST-LIST:END -->';
+              
+              return markdownContent;
+            } catch (error) {
+              console.error('Error fetching Medium posts:', error);
+              return '<!-- BLOG-POST-LIST:START -->\n- Error fetching posts. Check out my Medium profile at https://medium.com/@edawarekaro\n<!-- BLOG-POST-LIST:END -->';
+            }
+          }
+          
+          async function updateReadme() {
+            try {
+              // Read the README file
+              const readmePath = './README.md';
+              let readme = fs.readFileSync(readmePath, 'utf8');
+              
+              // Fetch new posts content
+              const newPostsSection = await fetchMediumPosts();
+              
+              // Replace the existing blog posts section with new content
+              const regex = /<!-- BLOG-POST-LIST:START -->[\s\S]*<!-- BLOG-POST-LIST:END -->/;
+              readme = readme.replace(regex, newPostsSection);
+              
+              // Write the updated content back to the README
+              fs.writeFileSync(readmePath, readme);
+              
+              console.log('README updated successfully with latest Medium posts.');
+            } catch (error) {
+              console.error('Error updating README:', error);
+              process.exit(1);
+            }
+          }
+          
+          updateReadme();
+          EOF
+          
+          # Run the script
+          node fetch-medium-posts.js
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README with latest Medium posts" && git push)
