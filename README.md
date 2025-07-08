@@ -145,11 +145,11 @@ Technologies: .NET Core Web API, MVC, Paystack, Opay
 
 ## 📝 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
+- [Fixing “Java Not Found” for Flutter Projects in Firebase Studio](https://medium.com/@edawarekaro/fixing-java-not-found-for-flutter-projects-in-firebase-studio-33c2611f3f1b?source=rss-f7d2dcf65495------2) - Jul 7, 2025
 - [Setting Up Your .NET 8 Environment in Google Jules: An Optimised Guide](https://medium.com/@edawarekaro/setting-up-your-net-8-environment-in-google-jules-an-optimised-guide-5b4c8588b874?source=rss-f7d2dcf65495------2) - Jul 1, 2025
 - [Master App Updates in Flutter: The Smart Way with Firebase Remote Config](https://medium.com/@edawarekaro/master-app-updates-in-flutter-the-smart-way-with-firebase-remote-config-a592a44a4e19?source=rss-f7d2dcf65495------2) - Jun 24, 2025
 - [Static vs. Dynamic AI Agents for Banking Customer Service: A Nigerian Case Study](https://medium.com/@edawarekaro/static-vs-dynamic-ai-agents-for-banking-customer-service-a-nigerian-case-study-f968f7cf1e98?source=rss-f7d2dcf65495------2) - Jun 3, 2025
 - [Secure Authentication in Flutter: Implementing Refresh Tokens with Dio](https://medium.com/@edawarekaro/secure-authentication-in-flutter-implementing-refresh-tokens-with-dio-e3ebef1f56ef?source=rss-f7d2dcf65495------2) - Mar 23, 2025
-- [Containerizing and Hosting a .NET Core Application on Render: An Updated Approach](https://medium.com/@edawarekaro/containerizing-and-hosting-a-net-core-application-on-render-an-updated-approach-40fae012787b?source=rss-f7d2dcf65495------2) - Feb 9, 2025
 <!-- BLOG-POST-LIST:END -->
 
 ## 📜 Certifications
