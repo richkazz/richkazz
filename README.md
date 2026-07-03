@@ -131,11 +131,11 @@ Senior Flutter Developer with **5+ years** of experience building scalable, prod
 
 ## 📝 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
-- [Fixing "Java Not Found" for Flutter Projects in Firebase Studio](https://medium.com/@edawarekaro/fixing-java-not-found-for-flutter-projects-in-firebase-studio-33c2611f3f1b) - Jul 7, 2025
-- [Setting Up Your .NET 8 Environment in Google Jules: An Optimised Guide](https://medium.com/@edawarekaro/setting-up-your-net-8-environment-in-google-jules-an-optimised-guide-5b4c8588b874) - Jul 1, 2025
-- [Master App Updates in Flutter: The Smart Way with Firebase Remote Config](https://medium.com/@edawarekaro/master-app-updates-in-flutter-the-smart-way-with-firebase-remote-config-a592a44a4e19) - Jun 24, 2025
-- [Static vs. Dynamic AI Agents for Banking Customer Service: A Nigerian Case Study](https://medium.com/@edawarekaro/static-vs-dynamic-ai-agents-for-banking-customer-service-a-nigerian-case-study-f968f7cf1e98) - Jun 3, 2025
-- [Secure Authentication in Flutter: Implementing Refresh Tokens with Dio](https://medium.com/@edawarekaro/secure-authentication-in-flutter-implementing-refresh-tokens-with-dio-e3ebef1f56ef) - Mar 23, 2025
+- [Operation PolinRider: The Complete Developer’s Guide to Detection, Containment, and Recovery](https://medium.com/@edawarekaro/operation-polinrider-the-complete-developers-guide-to-detection-containment-and-recovery-c3454bd660e3?source=rss-f7d2dcf65495------2) - Jun 2, 2026
+- [Surviving PolinRider: How to Recover Your GitHub Repositories After a Mass Force-Push Attack](https://medium.com/@edawarekaro/surviving-polinrider-how-to-recover-your-github-repositories-after-a-mass-force-push-attack-ebe8175124a0?source=rss-f7d2dcf65495------2) - May 29, 2026
+- [Idea Flow: How I Kept Testing “Impossible” Setup Ideas](https://medium.com/@edawarekaro/idea-flow-how-i-kept-testing-impossible-setup-ideas-c5b2dc3c2fd7?source=rss-f7d2dcf65495------2) - May 9, 2026
+- [Your Phone’s Apps Can Now Talk to Each Other’s AI Tools — Meet Mobile MCP](https://medium.com/@edawarekaro/your-phones-apps-can-now-talk-to-each-other-s-ai-tools-meet-mobile-mcp-6143a8cb0e20?source=rss-f7d2dcf65495------2) - Feb 26, 2026
+- [Taming the AI Code Tsunami: Why Dart Developers Need Reference CodeLens](https://medium.com/@edawarekaro/taming-the-ai-code-tsunami-why-dart-developers-need-reference-codelens-62bd7a4b672a?source=rss-f7d2dcf65495------2) - Jan 9, 2026
 <!-- BLOG-POST-LIST:END -->
 
 ## 📜 Certifications
